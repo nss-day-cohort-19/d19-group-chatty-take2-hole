@@ -4,6 +4,20 @@ var clearAll= document.getElementById('clear');
 var output1= document.getElementById('output');
 var input=document.getElementById('input');
 
+input.addEventListener("keyup", keyPressFunction);
+
+function keyPressFunction (event) {
+    if (event.keyCode === 13) {
+        Chatty.inputChange('output', input.value);
+    }
+}
+
+
+
+
+
+
+
 clearAll.addEventListener('click', function(event){
 	console.log('clear button responding');
 	if(output1.innerHTML== 0 || output2.innerHTML == 0){
@@ -51,27 +65,10 @@ function jsonMessage (messages){
 	}
 }
 Chatty.loadMessages(jsonMessage);
-Chatty.inputChange();
-////testing out some stuf TL
-//var holdClickedDiv;
-//
-//
-//funcName.methodName();
-//
-//var clickedDeleteButton = document.getElementsByClassName("whateverClassNameis").addEventListener("click", deleteOutput);
-//
-//
-//function deleteOutput () {
-//    holdClickedDiv.event.currentTarget;
-//    var removeButton =
-//    for (var d = 0; 0 < holdMyVar.length; d++) {
-//        holdMyVar
-//    }
-//}
-//
-//    CarLot.addStyle(holyCrapOnAStick, "red");
-//
-//function changeText () {
-//    var holdMyCrap = holyCrapOnAStick.getElementsByTagName("p")[3];
-//    console.log("what is this", holdMyCrap);
-//    holdMyCrap.innerHTML = inputField.value;
+//Chatty.inputChange();
+
+
+
+
+
+
