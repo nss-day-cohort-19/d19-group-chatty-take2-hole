@@ -4,6 +4,7 @@ var clearAll= document.getElementById('clear');
 var output1= document.getElementById('output');
 var input=document.getElementById('input');
 
+//Tamela .....calling the Iffe Method with enter key, used Nicks code for this and caled a method
 input.addEventListener("keyup", keyPressFunction);
 
 function keyPressFunction (event) {
@@ -11,12 +12,9 @@ function keyPressFunction (event) {
         Chatty.inputChange('output', input.value);
     }
 }
+/// Tamela
 
-
-
-
-
-
+//////???What is this doing??????
 
 clearAll.addEventListener('click', function(event){
 	console.log('clear button responding');
@@ -54,7 +52,6 @@ largeText.addEventListener("click", function() {
 //**** AR
 
 
-///adds message from input to output2 Div
 
 function jsonMessage (messages){
 	var divContent;
@@ -66,6 +63,7 @@ function jsonMessage (messages){
 }
 Chatty.loadMessages(jsonMessage);
 //Chatty.inputChange();
+/// this was calling the method in the wrong way and through an error
 
 
 
