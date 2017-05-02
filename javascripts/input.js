@@ -10,7 +10,7 @@ var Chatty= (function(altchatty){
         var outputElementID= document.getElementById(elementID);//put  in parent ID var
                                     //pass in message which is holding input.value
         outputElementID.innerHTML += `<div id="newMessage--${counter}">
-                                    <p>${message}</p>/
+                                    <p>${message}</p>
                                     <button>Delete</button>
                                     </div>`;
 
