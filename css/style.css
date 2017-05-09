@@ -7,7 +7,7 @@ h3.col-md-2 {
 }
 
 span {
-    font-size: 1.5em;
+    font-size: 1.5vw;
 }
 
 .center-block {
@@ -26,8 +26,8 @@ span {
 }
 
 .col-md-3 {
-    max-width: 20%;
     margin-top: 40px;
+    width: 22%;
 }
 
 .col-md-6 {
@@ -37,9 +37,12 @@ span {
 
 #messageArea{
 	border: 2px solid black;
-	margin: 20px 20px;
-	padding-bottom: 150px;
+	margin-left: 10%;
+    margin-right: 10%;
     background-color: lightgrey;
+    width:80%;
+    height: 80%;
+    padding-top: 1.5em;
 }
 
 .ar-checkboxes {
@@ -67,7 +70,7 @@ span {
 }
 
 .ar-fontSize {
-    font-size: 2vw;
+    font-size: 2em;
 }
 
 
@@ -85,17 +88,20 @@ span {
     color: black;
     padding: 10px;
     border-radius: 5px;
+/*    font-size: 3vw;*/
 }
 
 .tl-button {
     background-color: black;
     color: white;
+    font-size: 1vw;
 }
 
 .tl-message-btn-toggle {
     background-color: white;
     color: black;
     border: 4px inset salmon;
+    font-size: 1em;
 }
 
 .tl-section-Div {
